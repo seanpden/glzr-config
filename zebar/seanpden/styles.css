@@ -6,7 +6,7 @@
 
 /* icons */
 i {
-  color: rgb(115 130 175 / 95%);
+  /* color: rgb(115 130 175 / 95%); */
   margin-right: 7px;
   font-family: JetBrainsMono Nerd Font;
   font-size: 12px;
@@ -14,10 +14,8 @@ i {
 
 /* text and content */
 body {
-  /* color: rgb(255 255 255 / 90%); */
   color: #89b4fa;
   font-family: JetBrainsMono Nerd Font;
-  /* font-family: ui-monospace, monospace; */
   font-size: 12px;
   overflow: hidden;
 }
@@ -30,8 +28,8 @@ body,
 
 #root {
   font-family: JetBrainsMono Nerd Font;
-  background: #11111b75;
-  border-bottom: 1px solid rgb(255 255 255 / 5%);
+  /* background: #11111b75; */
+  /* border-bottom: 1px solid #9399b20f; */
   border-radius: 5px;
 }
 
@@ -58,7 +56,6 @@ body,
   justify-self: end;
 }
 
-/* .calendar, */
 .weather,
 .logo,
 .binding-mode,
@@ -73,16 +70,18 @@ body,
 .workspaces {
   display: flex;
   align-items: center;
+  gap: 5px;
+  background: #31324480; /* THIS ONE IS GOOD */
+  border: none;
+  border-radius: 10px;
 }
 
 .workspace {
-  background: rgb(255 255 255 / 5%);
-  margin-right: 4px;
+  background: #b4befe20;
   padding: 4px 8px;
-  /* color: rgb(255 255 255 / 90%); */
   color: #b4befe;
   border: none;
-  border-radius: 2px;
+  border-radius: 10px;
   cursor: pointer;
 
   &.displayed {
@@ -91,19 +90,17 @@ body,
 
   &.focused,
   &:hover {
-    background: #31324480;
+    background: #94e2d520;
     color: #94e2d5;
-    /* background: rgb(75 115 255 / 50%); */
   }
 }
 
 .binding-mode,
 .tiling-direction {
-  /* background: rgb(255 255 255 / 15%); */
-  /* color: rgb(255 255 255 / 90%); */
-  background: #31324480;
+  /* background: #31324480; */
+  background: #94e2d520;
   color: #94e2d5;
-  border-radius: 2px;
+  border-radius: 10px;
   line-height: 1;
   padding: 4px 8px;
   border: 0;
@@ -129,29 +126,118 @@ body,
   top: 3px;
 }
 
+.currentwindow-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* background: #31324480; /* THIS ONE IS GOOD */ */
+  /* background: #cba6f720; */
+  border: none;
+  border-radius: 10px;
+}
+
 .currentwindow {
+  background: #cba6f720;
   color: #cba6f7;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.network-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
+
 }
 
 .network {
+  background: #fab38720;
   color: #fab387;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.memory-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
 }
 
 .memory {
+  background: #f9e2af20;
   color: #f9e2af;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.cpu-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
 }
 
 .cpu {
+  background: #a6e3a120;
   color: #a6e3a1;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
 }
 
 .weather {
+  background: #94e2d520;
   color: #94e2d5;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.calendar-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.calendar {
+  background: #89dceb20;
+  color: #89dceb;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
 }
 
 .logo {
+  background: #89b4fa20;
   color: #89b4fa;
+  padding: 4px;
+  border: none;
+  border-radius: 10px;
 }
-/* .workspaces { */
-/*   color: #b4befe; */
-/* } */
+

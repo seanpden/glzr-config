@@ -126,7 +126,7 @@
         return (
           <div className="app">
             <div className="left">
-              <i className="logo nf nf-custom-windows"></i>
+              <i className="logo nf nf-fa-microsoft"></i>
               {output.glazewm && (
                 <div className="workspaces">
                   {output.glazewm.currentWorkspaces.map(workspace => (
@@ -147,6 +147,7 @@
             </div>
 
             <div className="center">
+            <div className="currentwindow-container">
               {output.glazewm && (
                 <div className="currentwindow">
                   {output.glazewm.focusedContainer.title && (
@@ -156,6 +157,7 @@
                   )}
                 </div>
               )}
+            </div>
             </div>
 
             <div className="right">
@@ -180,10 +182,12 @@
               )}
 
               {output.network && (
+              <div className="network-container">
                 <div className="network">
                   {getNetworkIcon(output.network)}
                   {output.network.defaultGateway?.ssid}
                 </div>
+              </div>
               )}
 
               {output.cpu && (
@@ -200,10 +204,12 @@
               )}
 
               {output.memory && (
+              <div className="memory-container">
                 <div className="memory">
                   <i className="nf nf-fae-chip"></i>
                   {Math.round(output.memory.usage)}%
                 </div>
+              </div>
               )}
 
               {output.weather && (
@@ -214,10 +220,12 @@
               )}
 
               {output.date?.formatted && (
+                <div className="calendar-container">
                 <div className="calendar">
                   <i className="nf nf-md-calendar"></i>
                   {output.date?.formatted}
                 </div>
+              </div>
               )}
             </div>
 
