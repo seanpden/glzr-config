@@ -8,11 +8,14 @@
 i {
   color: rgb(115 130 175 / 95%);
   margin-right: 7px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 12px;
 }
 
 /* text and content */
 body {
-  color: rgb(255 255 255 / 90%);
+  /* color: rgb(255 255 255 / 90%); */
+  color: #89b4fa;
   font-family: JetBrainsMono Nerd Font;
   /* font-family: ui-monospace, monospace; */
   font-size: 12px;
@@ -26,8 +29,10 @@ body,
 }
 
 #root {
+  font-family: JetBrainsMono Nerd Font;
+  background: #11111b75;
   border-bottom: 1px solid rgb(255 255 255 / 5%);
-  background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%));
+  border-radius: 5px;
 }
 
 .app {
@@ -35,7 +40,6 @@ body,
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 100%;
-  /* padding: 4px 1.5vw; */
   padding: 4px 24px;
 }
 
@@ -75,7 +79,8 @@ body,
   background: rgb(255 255 255 / 5%);
   margin-right: 4px;
   padding: 4px 8px;
-  color: rgb(255 255 255 / 90%);
+  /* color: rgb(255 255 255 / 90%); */
+  color: #b4befe;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -86,14 +91,18 @@ body,
 
   &.focused,
   &:hover {
-    background: rgb(75 115 255 / 50%);
+    background: #31324480;
+    color: #94e2d5;
+    /* background: rgb(75 115 255 / 50%); */
   }
 }
 
 .binding-mode,
 .tiling-direction {
-  background: rgb(255 255 255 / 15%);
-  color: rgb(255 255 255 / 90%);
+  /* background: rgb(255 255 255 / 15%); */
+  /* color: rgb(255 255 255 / 90%); */
+  background: #31324480;
+  color: #94e2d5;
   border-radius: 2px;
   line-height: 1;
   padding: 4px 8px;
@@ -119,3 +128,30 @@ body,
   left: -8px;
   top: 3px;
 }
+
+.currentwindow {
+  color: #cba6f7;
+}
+
+.network {
+  color: #fab387;
+}
+
+.memory {
+  color: #f9e2af;
+}
+
+.cpu {
+  color: #a6e3a1;
+}
+
+.weather {
+  color: #94e2d5;
+}
+
+.logo {
+  color: #89b4fa;
+}
+/* .workspaces { */
+/*   color: #b4befe; */
+/* } */
