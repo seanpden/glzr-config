@@ -34,6 +34,7 @@
       const providers = zebar.createProviderGroup({
         network: { type: 'network' },
         glazewm: { type: 'glazewm' },
+        media: { type: 'media' },
         cpu: { type: 'cpu' },
         date: { type: 'date', formatting: 'yyyy-LL-dd HH:mm' },
         battery: { type: 'battery' },
@@ -147,17 +148,18 @@
             </div>
 
             <div className="center">
-            <div className="currentwindow-container">
-              {output.glazewm && (
-                <div className="currentwindow">
-                  {output.glazewm.focusedContainer.title && (
-                    output.glazewm.focusedContainer.title?.length > 64
-                        ? output.glazewm.focusedContainer.title.slice(0, 64) + '...'
-                        : output.glazewm.focusedContainer.title
-                  )}
-                </div>
-              )}
-            </div>
+
+              <div className="currentwindow-container">
+                {output.glazewm && (
+                  <div className="currentwindow">
+                    {output.glazewm.focusedContainer.title && (
+                      output.glazewm.focusedContainer.title?.length > 64
+                          ? output.glazewm.focusedContainer.title.slice(0, 64) + '...'
+                          : output.glazewm.focusedContainer.title
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
 
             <div className="right">

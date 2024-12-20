@@ -71,7 +71,8 @@ body,
   display: flex;
   align-items: center;
   gap: 5px;
-  background: #31324480; /* THIS ONE IS GOOD */
+  background: #31324480;
+  /* THIS ONE IS GOOD */
   border: none;
   border-radius: 10px;
 }
@@ -130,7 +131,7 @@ body,
   display: flex;
   align-items: center;
   gap: 5px;
-  /* background: #31324480; /* THIS ONE IS GOOD */ */
+  /* background: #31324480; /* THIS ONE IS GOOD */
   /* background: #cba6f720; */
   border: none;
   border-radius: 10px;
@@ -241,3 +242,18 @@ body,
   border-radius: 10px;
 }
 
+.media-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.media {
+  background: #89b4fa20;
+  color: #89b4fa;
+  padding: 4px;
+  border: none;
+  border-radius: 10px;
+}
