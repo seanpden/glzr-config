@@ -54,15 +54,19 @@
   /* --shadow-size-button: 0; */
 
   /* colors */
-  --text: var(--ctp-mocha-text);
-  /* --bg: var(--ctp-mocha-surface0); */
-  --bg: var(--ctp-mocha-base);
-  /* --border: var(--ctp-mocha-crust); */
+
+  /* Custom */
+  /* --bg: var(--ctp-mocha-base); */
   --border: var(--ctp-mocha-mantle);
-  /* --border-button: var(--ctp-mocha-crust); */
   --border-button: var(--ctp-mocha-mantle);
-  /* --shadow: var(--ctp-mocha-mantle); */
   --shadow: var(--ctp-mocha-crust);
+  /* Defaults */
+  --bg: var(--ctp-mocha-surface0);
+  /* --border: var(--ctp-mocha-crust); */
+  /* --border-button: var(--ctp-mocha-crust); */
+  /* --shadow: var(--ctp-mocha-mantle); */
+
+  --text: var(--ctp-mocha-text);
   --icon: var(--ctp-mocha-red);
   --memory: var(--ctp-mocha-mauve);
   --cpu: var(--ctp-mocha-pink);
