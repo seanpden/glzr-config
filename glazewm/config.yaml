@@ -26,7 +26,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '50px'
+    top: '60px'
     right: '20px'
     bottom: '20px'
     left: '20px'
@@ -60,7 +60,7 @@ window_behavior:
       centered: true
 
       # Whether to show floating windows as always on top.
-      shown_on_top: false
+      shown_on_top: true
 
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
