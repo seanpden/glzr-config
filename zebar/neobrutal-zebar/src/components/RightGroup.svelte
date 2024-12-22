@@ -1,5 +1,10 @@
 <script lang="ts">
-  import type { DateOutput, GlazeWmOutput, NetworkOutput, WeatherOutput } from "zebar";
+  import type {
+    DateOutput,
+    GlazeWmOutput,
+    NetworkOutput,
+    WeatherOutput
+  } from "zebar";
   import NowPlaying from "./NowPlaying.svelte";
 
   type RightGroupProps = {
@@ -13,7 +18,7 @@
 </script>
 
 <div class="flex flex-row gap-3 items-center">
-  <NowPlaying glazewm={glazewm}/>
+  <NowPlaying {glazewm} />
   <div class="flex flex-row items-center gap-1">
     {#if network?.defaultInterface?.type === "ethernet"}
       <i class="ti ti-network"></i>
@@ -59,7 +64,7 @@
       {:else if weather.status === "thunder_night"}
         <i class="nf nf-weather-night_alt_lightning"></i>
       {/if}
-      {Math.round(weather.celsiusTemp)}°
+      {Math.round(weather.fahrenheitTemp)}°
     </div>
   {/if}
   <i class="ti ti-point-filled"></i>
