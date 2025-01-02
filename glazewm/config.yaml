@@ -97,7 +97,7 @@ window_rules:
         window_class: { regex: 'HwndWrapper*' }
 
       # Ignore rules for various games.
-      - window_process: { regex: 'eso64|DaggerfallUnity|valheim|OpenMW|openmw|openmw.exe|streaming_client.exe|NieRAutomata|ForzaHorizon5.exe|Destiny 2|destiny2.exe|Warhammer 40000 Space Marine 2 - Retail.exe' }
+      - window_process: { regex: 'eso64|DaggerfallUnity|valheim|OpenMW|openmw|openmw.exe|streaming_client.exe|NieRAutomata|ForzaHorizon5.exe|Destiny 2|destiny2.exe|Warhammer 40000 Space Marine 2 - Retail.exe|[Ww]arhammer.*' }
       - window_title: { regex: 'Forza Horizon 5|.?[Ff]orza.?|Destiny 2' }
 
 binding_modes:
